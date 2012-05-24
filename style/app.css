@@ -1,0 +1,45 @@
+/* General WebApp adjustments (maybe need to be more specific) */
+html {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+a, input, textarea, select, button {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-touch-callout: none;
+}
+
+textarea, input {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+/* Clearfix */
+.cf:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.cf {
+	display: inline-block;
+}
+ 
+html[xmlns] .cf {
+	display: block;
+}
+ 
+* html .cf {
+	height: 1%;
+}
+
+/* Ellipsis */
+.ellipsis {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
