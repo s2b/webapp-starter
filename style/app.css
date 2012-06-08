@@ -19,13 +19,13 @@ a, input, textarea, select, button {
 }
 
 /* Clearfix */
+.cf:before, .cf:after {
+    content: "";
+    display: table;
+}
+
 .cf:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
+    clear: both;
 }
 
 /* Ellipsis */
