@@ -13,9 +13,19 @@ textarea, input {
 	user-select: text;
 }
 
+/* Prevent touch callout */
 a, input, textarea, select, button {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-touch-callout: none;
+}
+
+/* Placeholder style */
+input::-webkit-input-placeholder {
+	opacity: .8;
+}
+
+input:-moz-placeholder {
+	opacity: .8;
 }
 
 /* Clearfix */
