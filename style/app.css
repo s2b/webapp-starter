@@ -44,3 +44,20 @@ input:-moz-placeholder {
 	overflow: hidden;
 	white-space: nowrap;
 }
+
+/* Scrolling area */
+.scrollable {
+	position: absolute;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* Touch demo */
+#touch-demo div {
+	position: absolute;
+	display: none;
+	border: 22px rgba(0, 0, 0, .5) solid;
+	border-radius: 22px;
+	margin-top: -22px;
+	margin-left: -22px;
+}
