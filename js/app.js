@@ -6,7 +6,7 @@
 	if (touchEnabled) {
 		/* Perform scrollfix */
 		$(document).on('touchmove', function (e) {
-			if (!$(event.target).hasClass('scrollable')) {
+			if (!$(event.target).closest('.scrollable').length) {
 				e.preventDefault();
 			}
 		});
