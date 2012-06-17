@@ -9,8 +9,22 @@
 
 		<title></title>
 
-		<link rel="apple-touch-startup-image" href="startup.png" />
-		<link rel="apple-touch-icon" href="app-icon.png" />
+		<!-- iPad @2x (portrait: 2048x1496, landscape: 1536x2008, icon: 144x144) -->
+		<link rel="apple-touch-startup-image" media="(orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)" href="startup-ipad-portrait@2x.png" />
+		<link rel="apple-touch-startup-image" media="(orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)" href="startup-ipad-landscape@2x.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="icon-ipad@2x.png" />
+		<!-- iPhone @2x (portrait: 640x920, icon: 114x114) -->
+		<link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="startup-iphone@2x.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="icon-iphone@2x.png" />
+		<!-- iPad (portrait: 768x1004, landscape: 1024x748, icon: 72x72) -->
+		<link rel="apple-touch-startup-image" media="(orientation: portrait) and not (-webkit-min-device-pixel-ratio: 2)" href="startup-ipad-portrait.png" />
+		<link rel="apple-touch-startup-image" media="(orientation: landscape) and not (-webkit-min-device-pixel-ratio: 2)" href="startup-ipad-landscape.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="icon-ipad.png" />
+		<!-- iPhone (portrait: 320x460, icon: 57x57) -->
+		<link rel="apple-touch-startup-image" media="(max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)" href="startup-iphone.png" />
+		<link rel="apple-touch-icon" href="icon-iphone.png" />
+		<!-- <link rel="apple-touch-icon-precomposed" href="" /> -->
+		
 		<link rel="stylesheet" href="style/normalize.css" />
 		<link rel="stylesheet" href="style/app.css" />
 	</head>
