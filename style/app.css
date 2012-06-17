@@ -60,6 +60,7 @@ input:-moz-placeholder {
 	border-radius: 22px;
 	margin-top: -22px;
 	margin-left: -22px;
+	z-index: 99;
 }
 
 /* Portrait orientation */
