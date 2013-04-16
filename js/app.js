@@ -5,23 +5,23 @@
 
 	if (touchEnabled) {
 		/* Perform scrollfix */
-		$(document).on('touchmove', function (e) {
-			if (!$(e.target).closest('.scrollable').length) {
-				e.preventDefault();
-			}
-		});
+		$(document)
+			.on('touchmove', function (e) {
+				if (!$(e.target).closest('.scrollable').length) {
+					e.preventDefault();
+				}
+			})
+			.on('.scrollable', 'touchstart', function () {
+				var startTopScroll = this.scrollTop;
 
-		$('.scrollable').on('touchstart', function () {
-			var startTopScroll = this.scrollTop;
+				if (startTopScroll <= 0) {
+					this.scrollTop = 1;
+				}
 
-			if (startTopScroll <= 0) {
-				this.scrollTop = 1;
-			}
-
-			if (startTopScroll + this.offsetHeight >= this.scrollHeight) {
-				this.scrollTop = this.scrollHeight - this.offsetHeight - 1;
-			}
-		});
+				if (startTopScroll + this.offsetHeight >= this.scrollHeight) {
+					this.scrollTop = this.scrollHeight - this.offsetHeight - 1;
+				}
+			});
 
 		/* Touch demo mode */
 		if (touchDemo) {
