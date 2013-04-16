@@ -49,7 +49,7 @@
 
 					$(document)
 						.on('touchmove', touchDemoUpdate)
-						.on('touchend touchcancel', function () {
+						.one('touchend touchcancel', function () {
 							$(document).off('touchmove', touchDemoUpdate);
 							$touchDemo.hide();
 						});
