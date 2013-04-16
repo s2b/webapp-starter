@@ -13,7 +13,7 @@
 
 		$('.scrollable').on('touchstart', function () {
 			var startTopScroll = this.scrollTop;
-			
+
 			if (startTopScroll <= 0) {
 				this.scrollTop = 1;
 			}
@@ -46,14 +46,14 @@
 					}
 
 					touchDemoUpdate(e);
-					
+
 					$(document)
 						.on('touchmove', touchDemoUpdate)
 						.on('touchend touchcancel', function () {
 							$(document).off('touchmove', touchDemoUpdate);
 							$touchDemo.hide();
 						});
-				});				
+				});
 		}
 	}
 
